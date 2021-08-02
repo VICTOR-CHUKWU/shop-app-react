@@ -1,0 +1,60 @@
+
+@import '../scssComponents/mixins';
+.category{
+    height: auto;
+
+    .carousel-card{
+        height: 20.5rem;
+       max-height: 20.5rem;
+        img{
+            height: 100%;
+        }
+        &__end{
+            height: 50%;
+           width: 100%;
+            img{
+                height: 100%;
+                width: 100%;
+
+            }
+        }
+    }
+}
+//category foot
+.category-foot{
+    background: $white;
+   
+    @include media-breakpoint-up(sm){    
+        background: none;
+    }
+    &__inner{
+       background: none;
+
+        @include media-breakpoint-up(sm){
+            background: $white;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+    }
+}
+
+
+//designing the fontawesome icon
+.icon-container{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    .react-icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.6rem;
+    }
+    @include media-breakpoint-down(md){
+        width: 30px;
+        height: 30px;
+        .react-icon{
+            font-size: 1rem;
+        }
+    }
+}

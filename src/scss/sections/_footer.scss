@@ -1,0 +1,26 @@
+.footer{
+    background-color: $footer !important;
+    h5,h3,h4,p{
+        color: white;
+    }
+    .display__light{
+        color: white;
+        &:hover{
+            color: $success;
+        }
+    }
+    .social-icon{
+        font-size: 2rem;
+        color: white;
+        fill: $success;
+    }
+    &__bottom{
+        background-color: rgba($footer, 0.4) !important;
+    }
+    &__mobile{
+        span{
+            font-size: .7rem !important;
+            font-weight: 300 !important;
+        }
+    }
+}

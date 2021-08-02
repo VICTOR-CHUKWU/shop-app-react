@@ -1,0 +1,21 @@
+@import "custom";
+
+//for components
+
+@import './scssComponents/mixins';
+@import './scssComponents/button';
+@import './scssComponents/typography';
+
+
+//for section
+@import './sections/body';
+@import './sections/header';
+@import './sections/sidebar';
+@import './sections/homecategory';
+@import './sections/productDisplay';
+@import './sections/collectionDisplay';
+@import './sections/advertHome';
+@import './sections/footer';
+@import './sections/cart';
+@import './sections/account';
+@import './sections/dashboard';

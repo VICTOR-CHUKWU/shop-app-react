@@ -1,0 +1,53 @@
+
+
+.display{
+    &__light{
+        font-size: .9rem;
+        font-style: italic;
+        color: $gray-600;
+        cursor: pointer;
+        .icon{
+            stroke: $gray-600;
+        }
+        &:hover{
+            color: $success;
+            .icon{
+                stroke: $success;
+            }
+        }
+    }
+    &__icon{
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $black;
+        margin-left: .2rem;
+        @include media-breakpoint-down(md){
+            font-size: .8rem;
+            margin-left: 0;
+            margin-top: .2rem;
+        }
+    }
+    &__title{
+        font-size: 1.5rem;
+        @include media-breakpoint-down(lg){
+            font-size: 1rem;
+        }
+    }
+    &__product-title{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-bottom: 0;
+    }
+}
+.price{
+    font-size: 1rem;
+    font-weight: 500;
+    color: $black;
+}
+.text-green{
+    color: $green;
+}
+.bg-blue{
+    background: $blue;
+}

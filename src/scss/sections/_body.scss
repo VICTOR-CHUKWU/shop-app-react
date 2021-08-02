@@ -1,0 +1,9 @@
+
+@import '../scssComponents/mixins';
+
+.main{
+    @include background;
+    padding: 0;
+    margin: 0;
+   
+}

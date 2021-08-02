@@ -1,0 +1,68 @@
+
+.btn-main{
+    // background: $white;
+    color: $black !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    .icon{
+        stroke: $black;
+    }
+    &:hover{
+        color: $success !important;
+        // background: rgba($success, 0.9);
+        .icon{
+            stroke: $success;
+            fill: $white;
+        }
+        
+    }
+    &:active{
+        background: $secondary;
+        color: $black;
+    }
+}
+
+.input-quantity{
+    width: 40px;
+    padding: 0 .2rem;
+}
+.btn-large-font{
+    font-size: 1.3rem !important;
+    @include media-breakpoint-down(md){
+        font-size: 1rem !important;
+    }
+}
+.btn-check-medium{
+    width: 1.3rem !important;
+    height: 1.3rem !important;
+    @include media-breakpoint-down(lg){
+        width: .7rem !important;
+        height: .7rem !important;
+    }
+}
+.btn-blue{
+    background: $blue;
+    color: white;
+    &:hover{
+        color: $gray-500;
+    }
+}
+.input-border-bottom{
+    border: none;
+    border-bottom: 1px solid $gray-400;
+    background: none !important;
+    outline: none !important;
+    color: $black;
+    font-size: 1rem;
+    &:focus{
+        background: none !important;
+        outline: none !important;
+        border-bottom: 3px solid $success !important;
+    }
+}
+.label{
+    color: $black;
+    &:focus{
+        color: $success;
+    }
+}

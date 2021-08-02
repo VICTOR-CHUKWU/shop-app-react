@@ -1,0 +1,22 @@
+.advert-home{
+    &__images{
+        height: 14rem;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        img{
+            height: 100%;
+            width: 100%;
+            transition: all 1s ease-in-out;
+            &:hover{
+                transform: scale(1.1);
+            }
+
+        }
+    }
+    @include media-breakpoint-down(md){
+        &__images{
+            height: 8rem;
+        }
+    }
+}
